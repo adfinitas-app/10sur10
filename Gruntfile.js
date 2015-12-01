@@ -48,7 +48,7 @@ module.exports = function (grunt) {
 
 		},
 
-		copy: {
+		/*copy: {
 
 			scripts: {
 				expand: true,
@@ -65,7 +65,7 @@ module.exports = function (grunt) {
 				dest: 'assets/fonts/'
 			}
 
-		},
+		},*/
 
 		/*'string-replace': {
 
@@ -98,7 +98,7 @@ module.exports = function (grunt) {
 				src: [
 
 					// Foundation core
-					//'assets/components/foundation/js/foundation/foundation.js',
+					'assets/components/foundation-sites/js/foundation.core.js',
 
 					// Pick the componenets you need in your project
 					//'assets/components/foundation/js/foundation/foundation.abide.js',
@@ -122,7 +122,7 @@ module.exports = function (grunt) {
 					//'assets/components/foundation/js/foundation/foundation.topbar.js',
 
 					// Include your own custom scripts (located in the custom folder)
-					//'assets/javascript/custom/*.js'
+					'assets/javascript/custom/*.js'
 
 				],
 
@@ -183,6 +183,6 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('package', ['compress:main']);
 	//grunt.registerTask('build', ['copy', 'string-replace:fontawesome', 'sass', 'concat', 'uglify']);
-	grunt.registerTask('build', ['copy', 'sass', 'concat', 'uglify']);
+	grunt.registerTask('build', ['sass', 'concat', 'uglify']);
 	grunt.registerTask('default', ['watch']);
 };
