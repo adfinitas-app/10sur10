@@ -1,0 +1,22 @@
+{
+  "name": "dev.10sur10.me",
+  "homepage": "https://github.com/adfinitas-app/10sur10",
+  "authors": [
+    "jeFFF <jftournoux@vegas-deluxe.com>"
+  ],
+  "description": "Packages Adfinitas AEA10sur10",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "©",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.3"
+  }
+}
