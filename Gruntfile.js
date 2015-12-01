@@ -39,7 +39,7 @@ module.exports = function (grunt) {
 
 			dist: {
 				options: {
-					outputStyle: 'compressed'
+					outputStyle: 'expanded'
 				},
 				files: {
 					'assets/stylesheets/foundation.css': 'assets/scss/foundation.scss'
@@ -98,7 +98,7 @@ module.exports = function (grunt) {
 				src: [
 
 					// Foundation core
-					'assets/components/foundation-sites/js/foundation.core.js',
+					'assets/components/foundation/js/foundation.core.js',
 
 					// Pick the componenets you need in your project
 					//'assets/components/foundation/js/foundation/foundation.abide.js',
