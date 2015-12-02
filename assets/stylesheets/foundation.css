@@ -464,10 +464,10 @@ body {
 }
 
 body {
-  background: #fff;
+  background: #FFFFFF;
   color: #222;
   cursor: auto;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "VerbCompRegular", "Helvetica", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -1480,7 +1480,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "VerbCompRegular", "Helvetica", Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2456,7 +2456,7 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   color: #FFFFFF;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "VerbCompRegular", "Helvetica", Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
   padding-left: 1.9791666667rem;
@@ -3216,7 +3216,7 @@ p aside {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "VerbCompRegular", "Helvetica", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -3533,6 +3533,54 @@ blockquote p {
   }
 }
 
+@font-face {
+  font-family: 'VerbCompLight';
+  src: url("fonts/VerbCompRegular.eot");
+  src: url("fonts/VerbCompLight.eot?#iefix") format("embedded-opentype"), url("fonts/VerbCompLight.woff") format("woff"), url("fonts/VerbCompLight.ttf") format("truetype"), url("fonts/VerbCompLight.svg#VerbCompLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VerbCompRegular';
+  src: url("fonts/VerbCompRegular.eot");
+  src: url("fonts/VerbCompRegular.eot?#iefix") format("embedded-opentype"), url("fonts/VerbCompRegular.woff") format("woff"), url("fonts/VerbCompRegular.ttf") format("truetype"), url("fonts/VerbCompRegular.svg#VerbCompRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VerbCompBold';
+  src: url("fonts/VerbCompRegular-Bold.eot");
+  src: url("fonts/VerbCompRegular-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/VerbCompRegular-Bold.woff") format("woff"), url("fonts/VerbCompRegular-Bold.ttf") format("truetype"), url("fonts/VerbCompRegular-Bold.svg#VerbCompRegular-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VerbCompBlack';
+  src: url("fonts/verbcompblack-webfont.eot");
+  src: url("fonts/verbcompblack-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/verbcompblack-webfont.woff") format("woff"), url("fonts/verbcompblack-webfont.ttf") format("truetype"), url("fonts/verbcompblack-webfont.svg#verbcompblack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.vlight {
+  font-family: 'VerbCompLight', 'Helvetica', Arial, sans-serif;
+}
+
+.vreg {
+  font-family: 'VerbCompRegular', 'Helvetica', Arial, sans-serif;
+}
+
+.vbold {
+  font-family: 'VerbCompBold', 'Helvetica', Arial, sans-serif;
+}
+
+.vblack {
+  font-family: 'VerbCompBlack', 'Helvetica', Arial, sans-serif;
+}
+
 .front-banner {
   height: 50rem;
   background: url("../images/front-banner.jpg") no-repeat 50% 50%;
@@ -3565,6 +3613,10 @@ blockquote p {
   margin-right: auto;
   float: none;
   float: left;
+}
+
+.clearfix {
+  clear: both;
 }
 
 /*# sourceMappingURL=foundation.css.map */
