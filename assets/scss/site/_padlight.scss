@@ -1,3 +1,9 @@
 .pad-light {
   background: $light;
 }
+.equal {
+    padding: rem-calc(78) 0 rem-calc(48);
+}
+.button {
+    margin-bottom: 0;
+}

@@ -3,6 +3,7 @@
 // Licensed under MIT Open Source
 
 @import 'normalize';
+@import 'site/mysettings';
 @import 'foundation/settings';
 
 // Behold, here are all the Foundation components.
@@ -45,7 +46,7 @@
 //@import 'foundation/components/visibility';
 
 
-@import 'site/mysettings';
+
 @import 'site/fonts';
 @import 'site/header';
 @import 'site/greenstuff';

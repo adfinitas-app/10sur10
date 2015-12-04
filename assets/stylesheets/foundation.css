@@ -393,6 +393,11 @@ th {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6,
+strong {
+  font-weight: normal;
+}
+
 meta.foundation-version {
   font-family: "/5.5.3/";
 }
@@ -1880,15 +1885,15 @@ button, .button {
   text-decoration: none;
   display: inline-block;
   padding: 1rem 2rem 1.0625rem 2rem;
-  font-size: 1rem;
-  background-color: #008CBA;
-  border-color: #007095;
+  font-size: 1.5625rem;
+  background-color: #22531D;
+  border-color: #1b4217;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #007095;
+  background-color: #1b4217;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -1982,7 +1987,7 @@ button.tiny, .button.tiny {
 
 button.expand, .button.expand {
   padding: 1rem 2rem 1.0625rem 2rem;
-  font-size: 1rem;
+  font-size: 1.5625rem;
   padding-bottom: 1.0625rem;
   padding-top: 1rem;
   padding-left: 1rem;
@@ -2009,8 +2014,8 @@ button.round, .button.round {
 }
 
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
-  background-color: #008CBA;
-  border-color: #007095;
+  background-color: #22531D;
+  border-color: #1b4217;
   color: #FFFFFF;
   box-shadow: none;
   cursor: default;
@@ -2018,7 +2023,7 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
 }
 
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #007095;
+  background-color: #1b4217;
 }
 
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
@@ -2026,7 +2031,7 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 }
 
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #008CBA;
+  background-color: #22531D;
 }
 
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
@@ -3924,11 +3929,6 @@ blockquote p {
   }
 }
 
-h1, h2, h3, h4, h5, h6,
-strong {
-  font-weight: normal;
-}
-
 @font-face {
   font-family: 'VerbCompLight';
   src: url("fonts/VerbCompRegular.eot");
@@ -4101,6 +4101,14 @@ strong {
 
 .pad-light {
   background: #EFEFE0;
+}
+
+.equal {
+  padding: 4.875rem 0 3rem;
+}
+
+.button {
+  margin-bottom: 0;
 }
 
 .pad-dark {
