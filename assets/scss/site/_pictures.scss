@@ -6,19 +6,23 @@
     max-width: 100%;
     width: 100%;
     .picture {
+@media #{$medium-up} {
+    @include grid-column(
+          // Control the number of columns
+          $columns:2.5,
+          // Specify whether or not this is the last column in the row
+          $last-column:true,
+          // Choose whether or not to center this column
+          $center:true,
+          // Set to true to remove column padding
+          $collapse:true
+    );
+}
+
         position: relative;
         z-index: 1;
-      @include grid-column(
-        // Control the number of columns
-        $columns:2.5,
-        // Specify whether or not this is the last column in the row
-        $last-column:true,
-        // Choose whether or not to center this column
-        $center:true,
-        // Set to true to remove column padding
-        $collapse:true
-      );
-      float: left;
+
+      float: left !important;
       height: 612px;
       background-size: cover;
       background-repeat: no-repeat;

@@ -3,3 +3,20 @@
     background: url('../images/front-banner.jpg') no-repeat 50% 50%;
     background-size: cover;
 }
+.buttondon {
+
+    width: rem-calc(220);
+    height: rem-calc(60);
+    font-size: rem-calc(20);
+    line-height: rem-calc(60);
+    text-transform: uppercase;
+    background: $green;
+    border-radius: 5px;
+    color: #FFF;
+    display: block;
+    text-align: center;
+    margin-top: rem-calc(16);
+    &:hover {
+        color: #FFF;
+    }
+}

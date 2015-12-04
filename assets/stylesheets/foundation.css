@@ -2643,7 +2643,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333333;
+  background: #FFFFFF;
 }
 
 .contain-to-grid .top-bar {
@@ -2677,7 +2677,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar {
-  background: #333333;
+  background: #FFFFFF;
   height: 5.9375rem;
   line-height: 5.9375rem;
   margin-bottom: 0;
@@ -2800,7 +2800,7 @@ meta.foundation-mq-topbar {
 }
 
 .top-bar.expanded .title-area {
-  background: #333333;
+  background: #FFFFFF;
 }
 
 .top-bar.expanded .toggle-topbar a {
@@ -2839,7 +2839,7 @@ meta.foundation-mq-topbar {
 
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px #1a1a1a;
+  border-top: solid 1px gray;
   clear: both;
   height: 1px;
   width: 100%;
@@ -3160,7 +3160,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.0625em) {
   .top-bar {
-    background: #333333;
+    background: #FFFFFF;
     overflow: visible;
   }
   .top-bar:before, .top-bar:after {
@@ -3201,7 +3201,7 @@ meta.foundation-mq-topbar {
     top: 2.09375rem;
   }
   .top-bar.expanded {
-    background: #333333;
+    background: #FFFFFF;
   }
   .contain-to-grid .top-bar {
     margin: 0 auto;
@@ -3229,7 +3229,7 @@ meta.foundation-mq-topbar {
     color: #FFFFFF;
   }
   .top-bar-section li:not(.has-form) a:not(.button) {
-    background: #333333;
+    background: #FFFFFF;
     line-height: 5.9375rem;
     padding: 0 1.9791666667rem;
   }
@@ -3328,7 +3328,7 @@ meta.foundation-mq-topbar {
   }
   .top-bar-section > ul > .divider,
   .top-bar-section > ul > [role="separator"] {
-    border-right: solid 1px #4e4e4e;
+    border-right: solid 1px white;
     border-bottom: none;
     border-top: none;
     clear: none;
@@ -3336,7 +3336,7 @@ meta.foundation-mq-topbar {
     width: 0;
   }
   .top-bar-section .has-form {
-    background: #333333;
+    background: #FFFFFF;
     height: 5.9375rem;
     padding: 0 1.9791666667rem;
   }
@@ -4011,6 +4011,24 @@ strong {
   background-size: cover;
 }
 
+.buttondon {
+  width: 13.75rem;
+  height: 3.75rem;
+  font-size: 1.25rem;
+  line-height: 3.75rem;
+  text-transform: uppercase;
+  background: #22531D;
+  border-radius: 5px;
+  color: #FFF;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.buttondon:hover {
+  color: #FFF;
+}
+
 .pad-verts {
   background: #22531D;
 }
@@ -4107,7 +4125,7 @@ strong {
   padding: 4.875rem 0 3rem;
 }
 
-.button {
+.mybutton {
   margin-bottom: 0;
 }
 
@@ -4137,18 +4155,23 @@ strong {
 .pictures .picture {
   position: relative;
   z-index: 1;
-  padding-left: 0;
-  padding-right: 0;
-  width: 25%;
-  float: right;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-  float: left;
+  float: left !important;
   height: 612px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .pictures .picture {
+    padding-left: 0;
+    padding-right: 0;
+    width: 25%;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
 }
 
 .pictures .picture.panel-one {
