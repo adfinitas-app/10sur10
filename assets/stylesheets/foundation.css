@@ -3623,7 +3623,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 h1 {
-  font-size: 2.125rem;
+  font-size: 1.25rem;
 }
 
 h2 {
@@ -3845,7 +3845,7 @@ blockquote p {
     line-height: 1.4;
   }
   h1 {
-    font-size: 2.75rem;
+    font-size: 1.875rem;
   }
   h2 {
     font-size: 2.3125rem;
@@ -3924,6 +3924,11 @@ blockquote p {
   }
 }
 
+h1, h2, h3, h4, h5, h6,
+strong {
+  font-weight: normal;
+}
+
 @font-face {
   font-family: 'VerbCompLight';
   src: url("fonts/VerbCompRegular.eot");
@@ -3976,6 +3981,11 @@ blockquote p {
   color: #FFFFFF;
 }
 
+strong {
+  font-weight: normal;
+  font-family: 'VerbCompBold', 'Helvetica', Arial, sans-serif;
+}
+
 .front-banner {
   height: 50rem;
   background: url("../images/front-banner.jpg") no-repeat 50% 50%;
@@ -3984,6 +3994,76 @@ blockquote p {
 
 .pad-verts {
   background: #22531D;
+}
+
+.accroche {
+  height: 6rem;
+  background: #1F5321;
+}
+
+.accroche h1 {
+  line-height: 6rem;
+}
+
+.pads .columns {
+  padding: 0;
+  margin: 0;
+}
+
+.pads a {
+  display: block;
+  height: 100%;
+}
+
+.pads h2 {
+  cursor: pointer;
+  font-family: 'VerbCompRegular', 'Helvetica', Arial, sans-serif;
+  margin: 0;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  padding-top: 6rem;
+}
+
+.pads h2 strong {
+  font-size: 2.5rem;
+}
+
+.pad {
+  position: relative;
+  height: 17.1875rem;
+}
+
+.pad .cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #F00;
+}
+
+.pad.pad-one {
+  background: url("../images/bg-one.png") 50% 50%;
+}
+
+.pad.pad-two {
+  background: url("../images/bg-two.png") 50% 50%;
+}
+
+.pad.pad-three {
+  background: url("../images/bg-three.png") 50% 50%;
+}
+
+.pad.pad-four {
+  background: url("../images/bg-four.png") 50% 50%;
+}
+
+.pad.pad-vertical {
+  height: 34.375rem;
+}
+
+.pad.pad-vertical h2 {
+  padding-top: 14.5625rem;
 }
 
 .pad-jaune {
