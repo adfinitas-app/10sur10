@@ -3986,6 +3986,25 @@ strong {
   font-family: 'VerbCompBold', 'Helvetica', Arial, sans-serif;
 }
 
+.size45 {
+  font-size: 2.8125rem;
+}
+
+.size25 {
+  line-height: 1.875rem;
+  font-size: 1.5625rem;
+}
+
+.size30 {
+  line-height: 2.1875rem;
+  font-size: 1.875rem;
+}
+
+.size35 {
+  line-height: 2.1875rem;
+  font-size: 1.875rem;
+}
+
 .front-banner {
   height: 50rem;
   background: url("../images/front-banner.jpg") no-repeat 50% 50%;
@@ -4076,6 +4095,8 @@ strong {
 
 .pad-jaune {
   background: #FFBC00;
+  position: relative;
+  z-index: 2;
 }
 
 .pad-light {
@@ -4090,6 +4111,8 @@ strong {
   margin: 0 auto;
   max-width: 61.25rem;
   width: 100%;
+  position: relative;
+  z-index: 1;
   max-width: 100%;
   width: 100%;
 }
@@ -4104,6 +4127,8 @@ strong {
 }
 
 .pictures .picture {
+  position: relative;
+  z-index: 1;
   padding-left: 0;
   padding-right: 0;
   width: 25%;
@@ -4112,6 +4137,59 @@ strong {
   margin-right: auto;
   float: none;
   float: left;
+  height: 612px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.pictures .picture.panel-one {
+  background-image: url("../images/panel-1.jpg");
+}
+
+.pictures .picture.panel-two {
+  background-image: url("../images/panel-2.jpg");
+}
+
+.pictures .picture.panel-three {
+  background-image: url("../images/panel-3.jpg");
+}
+
+.pictures .picture.panel-four {
+  background-image: url("../images/panel-4.jpg");
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  margin-left: -16px;
+  width: 2.0625rem;
+  height: 1.0625rem;
+  display: block;
+  z-index: 45;
+  background: url("../images/arrow-down.png") no-repeat top center;
+}
+
+.data {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  color: #FFF;
+}
+
+.data span {
+  display: block;
+}
+
+.data span.country {
+  font-size: 1.5625rem;
+  font-style: italic;
+}
+
+.data span.copy {
+  font-size: 0.8125rem;
+  font-style: italic;
 }
 
 .clearfix {

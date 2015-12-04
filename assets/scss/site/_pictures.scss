@@ -1,9 +1,13 @@
 
 .pictures {
     @include grid-row();
+    position: relative;
+    z-index: 1;
     max-width: 100%;
     width: 100%;
     .picture {
+        position: relative;
+        z-index: 1;
       @include grid-column(
         // Control the number of columns
         $columns:2.5,
@@ -15,5 +19,50 @@
         $collapse:true
       );
       float: left;
+      height: 612px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      &.panel-one {
+          background-image: url('../images/panel-1.jpg');
+      }
+      &.panel-two {
+          background-image: url('../images/panel-2.jpg');
+      }
+      &.panel-three {
+          background-image: url('../images/panel-3.jpg');
+      }
+      &.panel-four {
+          background-image: url('../images/panel-4.jpg');
+      }
+    }
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: -16px;
+    width: rem-calc(33);
+    height: rem-calc(17);
+    display: block;
+    z-index: 45;
+    background:url('../images/arrow-down.png') no-repeat top center;
+}
+.data {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    color: #FFF;
+    span {
+        display: block;
+        &.country {
+            font-size: rem-calc(25);
+            font-style: italic;
+        }
+        &.copy {
+            font-size: rem-calc(13);
+            font-style: italic;
+        }
     }
 }

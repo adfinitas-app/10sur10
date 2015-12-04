@@ -59,3 +59,18 @@ strong {
     font-weight: normal;
     font-family: 'VerbCompBold', 'Helvetica', Arial, sans-serif;
 }
+.size45 {
+    font-size: rem-calc(45);
+}
+.size25 {
+    line-height: rem-calc(30);
+    font-size: rem-calc(25);
+}
+.size30 {
+    line-height: rem-calc(35);
+    font-size: rem-calc(30);
+}
+.size35 {
+    line-height: rem-calc(35);
+    font-size: rem-calc(30);
+}
