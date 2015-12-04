@@ -3575,13 +3575,13 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: #FFFFFF;
   line-height: inherit;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #0078a0;
+  color: #dbdbdb;
 }
 
 a img {
@@ -4009,6 +4009,22 @@ strong {
   height: 50rem;
   background: url("../images/front-banner.jpg") no-repeat 50% 50%;
   background-size: cover;
+  position: relative;
+}
+
+.front-banner .coverme {
+  padding-top: 5.9375rem;
+  background: url("../images/bg-frontheader.png");
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50rem;
+}
+
+.front-banner .coverme span {
+  display: block;
 }
 
 .buttondon {
@@ -4027,6 +4043,10 @@ strong {
 
 .buttondon:hover {
   color: #FFF;
+}
+
+.buttondon.btcenter {
+  margin: 0 auto;
 }
 
 .pad-verts {

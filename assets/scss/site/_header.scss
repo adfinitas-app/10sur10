@@ -2,6 +2,21 @@
     height: rem-calc(800);
     background: url('../images/front-banner.jpg') no-repeat 50% 50%;
     background-size: cover;
+    position: relative;
+    .coverme {
+        padding-top: $topbar-height;
+        background: url('../images/bg-frontheader.png');
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: rem-calc(800);
+        //scale-color($header-font-color, $lightness: 35%);
+        span {
+            display: block;
+        }
+    }
 }
 .buttondon {
 
@@ -18,5 +33,8 @@
     margin-top: rem-calc(16);
     &:hover {
         color: #FFF;
+    }
+    &.btcenter {
+        margin: 0 auto;
     }
 }
