@@ -4002,7 +4002,14 @@ strong {
 }
 
 .accroche h1 {
-  line-height: 6rem;
+  padding-top: 1rem;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .accroche h1 {
+    padding-top: 0;
+    line-height: 6rem;
+  }
 }
 
 .pads .columns {
@@ -4058,12 +4065,13 @@ strong {
   background: url("../images/bg-four.png") 50% 50%;
 }
 
-.pad.pad-vertical {
-  height: 34.375rem;
-}
-
-.pad.pad-vertical h2 {
-  padding-top: 14.5625rem;
+@media only screen and (min-width: 40.0625em) {
+  .pad.pad-vertical {
+    height: 34.375rem;
+  }
+  .pad.pad-vertical h2 {
+    padding-top: 14.5625rem;
+  }
 }
 
 .pad-jaune {

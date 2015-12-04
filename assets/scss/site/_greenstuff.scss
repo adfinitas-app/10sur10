@@ -5,7 +5,11 @@
     height: rem-calc(96);
     background: #1F5321;
     h1 {
-        line-height: rem-calc(96);
+        padding-top: rem-calc(16);
+        @media #{$medium-up} {
+            padding-top: 0;
+            line-height: rem-calc(96);
+        }
     }
 }
 .pads {
@@ -54,9 +58,11 @@
         background: url('../images/bg-four.png') 50% 50%;
     }
     &.pad-vertical {
-        height: rem-calc(550);
-        h2 {
-            padding-top: rem-calc(233);
+        @media #{$medium-up} {
+            height: rem-calc(550);
+            h2 {
+                padding-top: rem-calc(233);
+            }
         }
     }
 }
