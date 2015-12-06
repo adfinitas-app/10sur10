@@ -1,3 +1,17 @@
 .pad-dark {
   background: $dark;
 }
+.graph {
+    margin-top: rem-calc(37);
+    margin-bottom: rem-calc(37);
+}
+
+.give {
+    color: $green;
+    margin-top: rem-calc(60);
+}
+.multiply {
+    font-size: rem-calc(12);
+    line-height: rem-calc(14);
+    margin-bottom: rem-calc(45);
+}

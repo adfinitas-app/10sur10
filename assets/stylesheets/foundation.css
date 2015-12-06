@@ -4207,6 +4207,22 @@ strong {
   background: #DDDCD0;
 }
 
+.graph {
+  margin-top: 2.3125rem;
+  margin-bottom: 2.3125rem;
+}
+
+.give {
+  color: #22531D;
+  margin-top: 3.75rem;
+}
+
+.multiply {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  margin-bottom: 2.8125rem;
+}
+
 .pictures {
   margin: 0 auto;
   max-width: 61.25rem;
@@ -4227,6 +4243,14 @@ strong {
 }
 
 .pictures .picture {
+  padding-left: 0;
+  padding-right: 0;
+  width: 25%;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  cursor: pointer;
   position: relative;
   z-index: 1;
   float: left !important;
@@ -4236,16 +4260,14 @@ strong {
   background-position: 50% 50%;
 }
 
-@media only screen and (min-width: 40.0625em) {
-  .pictures .picture {
-    padding-left: 0;
-    padding-right: 0;
-    width: 25%;
-    float: right;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
+.pictures .picture .cover {
+  display: block;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 5;
+  position: relative;
 }
 
 .pictures .picture.panel-one {
@@ -4281,6 +4303,7 @@ strong {
   bottom: 0px;
   left: 40px;
   color: #FFF;
+  z-index: 1;
 }
 
 .data span {
@@ -4295,6 +4318,62 @@ strong {
 .data span.copy {
   font-size: 0.8125rem;
   font-style: italic;
+}
+
+.stories {
+  background: #FFBC00;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.stories h3 {
+  font-size: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.1875rem;
+}
+
+.stories .explication {
+  font-style: italic;
+  color: #333;
+}
+
+.stories .agir {
+  margin-top: 1.375rem;
+  margin-bottom: 2.5rem;
+  background: #D69D00;
+  border-radius: 5px;
+  padding: 0 1.375rem;
+}
+
+.stories .agir h4 {
+  margin: 1rem 0;
+  color: #FFF;
+  font-style: italic;
+  text-align: center;
+  background: url("../images/line.png") repeat-x 0% 50%;
+}
+
+.stories .agir h4 span {
+  background: #D69D00;
+  padding: 0 1.25rem;
+}
+
+.stories .agir p {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.story {
+  display: none;
+}
+
+.footer {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.logobottom {
+  margin-left: -80px;
 }
 
 .clearfix {

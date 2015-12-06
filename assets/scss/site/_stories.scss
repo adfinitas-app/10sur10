@@ -1,0 +1,39 @@
+.stories {
+    background: $yellow;
+    font-size: rem-calc(18);
+    line-height: rem-calc(22);
+    h3 {
+        font-size: rem-calc(40);
+        padding-top: rem-calc(40);
+        padding-bottom: rem-calc(35);
+    }
+    .explication {
+        font-style: italic;
+        color: #333;
+    }
+    .agir {
+        margin-top: rem-calc(22);
+        margin-bottom: rem-calc(40);
+        background: #D69D00;
+        border-radius: 5px;
+        padding: 0 rem-calc(22);
+        h4 {
+            margin: rem-calc(16) 0;
+            color: #FFF;
+            font-style: italic;
+            text-align: center;
+            background: url('../images/line.png') repeat-x 0% 50%;
+            span {
+                background: #D69D00;
+                padding: 0 rem-calc(20);
+            }
+        }
+        p {
+            margin: 0 0 rem-calc(16) 0;
+            padding: 0;
+        }
+    }
+}
+    .story {
+        display: none;
+    }
