@@ -43,7 +43,18 @@
         height: 100%;
         top: 0px;
         left: 0px;
-        background: #F00;
+        background: $light-green;
+        padding-top: rem-calc(60);
+        display: none;
+        .closebt {
+            position: absolute;
+            top: rem-calc(20);
+            right: rem-calc(20);
+            width: rem-calc(17);
+            height: rem-calc(17);
+            text-indent: -5000px;
+            background: url('../images/close.png') no-repeat;
+        }
     }
     &.pad-one {
         background: url('../images/bg-one.png') 50% 50%;
@@ -57,7 +68,29 @@
     &.pad-four {
         background: url('../images/bg-four.png') 50% 50%;
     }
+    .cover {
+        padding-left: rem-calc(35);
+        padding-right: rem-calc(35);
+        text-align: left;
+        p {
+            font-size: rem-calc(20);
+            line-height: rem-calc(24);
+            &.solution {
+                font-size: rem-calc(26);
+                line-height: rem-calc(28);
+            }
+            &.source {
+                padding-top: rem-calc(100);
+                padding-bottom: rem-calc(0);
+                font-size: rem-calc(13);
+            }
+        }
+
+    }
     &.pad-vertical {
+        .cover {
+            padding-top: rem-calc(155);
+        }
         @media #{$medium-up} {
             height: rem-calc(550);
             h2 {

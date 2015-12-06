@@ -4027,6 +4027,22 @@ strong {
   display: block;
 }
 
+.front-banner .line-one {
+  padding: 3.125rem 0 0.625rem;
+}
+
+.front-banner .line-two {
+  padding-top: 0.625rem;
+}
+
+.front-banner .line-three {
+  padding-bottom: 0.625rem;
+}
+
+.front-banner .line-five {
+  padding-bottom: 2.5rem;
+}
+
 .buttondon {
   width: 13.75rem;
   height: 3.75rem;
@@ -4103,7 +4119,19 @@ strong {
   height: 100%;
   top: 0px;
   left: 0px;
-  background: #F00;
+  background: #4E9946;
+  padding-top: 3.75rem;
+  display: none;
+}
+
+.pad .cover .closebt {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 1.0625rem;
+  height: 1.0625rem;
+  text-indent: -5000px;
+  background: url("../images/close.png") no-repeat;
 }
 
 .pad.pad-one {
@@ -4120,6 +4148,32 @@ strong {
 
 .pad.pad-four {
   background: url("../images/bg-four.png") 50% 50%;
+}
+
+.pad .cover {
+  padding-left: 2.1875rem;
+  padding-right: 2.1875rem;
+  text-align: left;
+}
+
+.pad .cover p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.pad .cover p.solution {
+  font-size: 1.625rem;
+  line-height: 1.75rem;
+}
+
+.pad .cover p.source {
+  padding-top: 6.25rem;
+  padding-bottom: 0;
+  font-size: 0.8125rem;
+}
+
+.pad.pad-vertical .cover {
+  padding-top: 9.6875rem;
 }
 
 @media only screen and (min-width: 40.0625em) {

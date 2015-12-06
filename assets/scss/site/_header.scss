@@ -17,6 +17,18 @@
             display: block;
         }
     }
+    .line-one {
+        padding: rem-calc(50) 0 rem-calc(10);
+    }
+    .line-two {
+        padding-top: rem-calc(10);
+    }
+    .line-three {
+        padding-bottom: rem-calc(10);
+    }
+    .line-five {
+        padding-bottom: rem-calc(40);
+    }
 }
 .buttondon {
 

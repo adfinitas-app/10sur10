@@ -98,7 +98,7 @@ module.exports = function (grunt) {
 				src: [
 
 					// Foundation core
-					'assets/components/foundation/js/foundation.core.js',
+					'assets/components/foundation/js/foundation.js',
 
 					// Pick the componenets you need in your project
 					//'assets/components/foundation/js/foundation/foundation.abide.js',
