@@ -52,6 +52,14 @@ $(document).ready(function(){
 
 
         }).on('mouseleave', function(){
+            if (Foundation.utils.is_small_only())
+            {
+                $('.storyDown').slideUp("fast").removeClass('storyDown');
+                $('.cover.hover').removeClass('hover');
+                $('.picture .cover').stop( true, true ).animate({opacity: 0});
+            }
+        });
+        $('.storyZone').on('mouseleave', function() {
             $('.storyDown').slideUp("fast").removeClass('storyDown');
             $('.cover.hover').removeClass('hover');
             $('.picture .cover').stop( true, true ).animate({opacity: 0});
