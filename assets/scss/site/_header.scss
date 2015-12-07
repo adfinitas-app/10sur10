@@ -15,6 +15,9 @@
 .tenonten {
     margin: 0 auto !important;
 }
+.boutonjefais {
+    background: url('../images/bg-bt-don.png') repeat-x 50% 50%;
+}
 
 .front-banner {
     height: rem-calc(800);
@@ -36,7 +39,7 @@
         //scale-color($header-font-color, $lightness: 35%);
 
         @media #{$medium-up} {
-            padding-top: $topbar-height;
+            padding-top: $topbar-height - 20;
         }
 
         span {
@@ -47,7 +50,7 @@
         }
     }
     .line-one {
-        padding: rem-calc(50) 0 rem-calc(10);
+        padding: rem-calc(30) 0 rem-calc(10);
     }
     .line-two {
         padding-top: rem-calc(10);
@@ -59,8 +62,14 @@
         padding-bottom: rem-calc(40);
     }
 }
+.italix {
+    font-style: italic;
+}
+.buttondonpanel {
+    margin-bottom: rem-calc(20) !important;
+}
 .buttondon {
-    background: $green;
+    //background: $green;
     /*width: rem-calc(220);
     height: rem-calc(60);
     font-size: rem-calc(20);

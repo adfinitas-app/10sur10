@@ -69,13 +69,25 @@
         background: url('../images/bg-four.png') 50% 50%;
     }
     .cover {
+        @media #{$medium-only} {
+            padding-top: rem-calc(25);
+            font-size: rem-calc(16) !important;
+        }
         padding-left: rem-calc(35);
         padding-right: rem-calc(35);
         text-align: left;
         p {
             font-size: rem-calc(16);
             line-height: rem-calc(20);
-            @media #{$medium-up} {
+            @media #{$medium-only} {
+                font-size: rem-calc(18);
+                line-height: rem-calc(20);
+                strong {
+                    font-size: rem-calc(18);
+                    line-height: rem-calc(20);
+                }
+            }
+            @media #{$large-up} {
                 font-size: rem-calc(20);
                 line-height: rem-calc(24);
             }
@@ -92,7 +104,7 @@
                 padding-bottom: rem-calc(0);
                 font-size: rem-calc(13);
                 @media #{$medium-up} {
-                    padding-top: rem-calc(100);
+                    padding-top: rem-calc(20);
                 }
             }
         }
@@ -100,7 +112,10 @@
     }
     &.pad-vertical {
         .cover {
-            @media #{$medium-up} {
+            @media #{$medium-only} {
+                padding-top: rem-calc(55);
+            }
+            @media #{$large-up} {
                 padding-top: rem-calc(155);
             }
         }

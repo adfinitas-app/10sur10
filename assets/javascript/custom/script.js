@@ -19,7 +19,7 @@ $(document).ready(function(){
             var myData = $(this).data().story;
             $(this).find('.cover').addClass('hover');
             $('.picture .cover').not('.cover.hover').stop( true, true ).animate({opacity: '.7'});
-
+            var myTop = $('.pictures').offset().top + 350;
             if (Foundation.utils.is_small_only())
             {
                 $('.stories').slideDown();
@@ -36,7 +36,7 @@ $(document).ready(function(){
             }
             else
             {
-                $('html, body').animate({scrollTop: $('.pictures').offset().top});
+                $('html, body').animate({scrollTop: myTop});
                 $('.stories').slideDown();
                 if ($('.storyDown').length > 0)
                 {
@@ -67,7 +67,7 @@ $(document).ready(function(){
 
     // --> Animation Panel
         var tl = new TimelineLite();
-        tl.to($('.coverme'), 2, {opacity:1} )
+        tl.to($('.coverme'), 1, {opacity:1} )
         .from($('.line-one'), .5, {opacity:0, top: '-50'})
         .from($('.theten'), 1, {opacity: 0, scale: 0})
         .from($('.line-two'), .5, {opacity:0, left: '-100'})
@@ -82,6 +82,10 @@ $(document).ready(function(){
             var myAction = $(this).data().action;
             var myWoopra = $(this).data().woopra;
             woopra.track('interaction', { category: myWoopra, action: myAction, value:0,url: document.location.href, title: document.title});
+        });
+        $('.myplus').on('click', function() {
+            var myTop = $('.pad-verts').offset().top - 80;
+            $('html, body').animate({scrollTop: myTop});
         });
 
 });

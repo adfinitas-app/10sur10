@@ -1,6 +1,7 @@
 .pad-light {
   background: #EFEFE0;//$light;
   color: #4C4B4C;
+
 }
 .equal {
     padding: rem-calc(78) 0 rem-calc(48);
@@ -10,4 +11,17 @@
 }
 .bttrame {
     background: url('../images/trame-bt.png') top center;
+}
+.other {
+    font-size: rem-calc(20);
+    color: #529100 !important;
+}
+.name {
+    h1 {
+        a {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+    }
 }
