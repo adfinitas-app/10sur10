@@ -15,3 +15,10 @@
     line-height: rem-calc(14);
     margin-bottom: rem-calc(45);
 }
+.other {
+    color: $green;
+    text-decoration: underline;
+    &:hover {
+        color: $green;
+    }
+}

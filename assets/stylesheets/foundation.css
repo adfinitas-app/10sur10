@@ -2150,6 +2150,27 @@ button::-moz-focus-inner {
   }
 }
 
+.inline-list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 1.0625rem;
+  margin-left: -1.375rem;
+  margin-right: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.inline-list > li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin-left: 1.375rem;
+}
+
+.inline-list > li > * {
+  display: block;
+}
+
 /* Standard Forms */
 form {
   margin: 0 0 1rem;
@@ -4714,6 +4735,15 @@ strong {
   margin-bottom: 2.8125rem;
 }
 
+.other {
+  color: #22531D;
+  text-decoration: underline;
+}
+
+.other:hover {
+  color: #22531D;
+}
+
 .pictures {
   margin: 0 auto;
   max-width: 61.25rem;
@@ -4734,14 +4764,7 @@ strong {
 }
 
 .pictures .picture {
-  padding-left: 0;
-  padding-right: 0;
-  width: 25%;
-  float: right;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-  cursor: pointer;
+  cursor: pointer !important;
   position: relative;
   z-index: 1;
   float: left !important;
@@ -4751,6 +4774,29 @@ strong {
   background-position: 50% 50%;
 }
 
+@media only screen and (min-width: 40.0625em) {
+  .pictures .picture {
+    padding-left: 0;
+    padding-right: 0;
+    width: 25%;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+
+.pictures .picture .story-mini {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #FFBC00;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
 .pictures .picture .cover {
   display: block;
   background: #000;
@@ -4758,7 +4804,9 @@ strong {
   height: 100%;
   opacity: 0;
   z-index: 5;
-  position: relative;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .pictures .picture.panel-one {
@@ -4811,24 +4859,37 @@ strong {
   font-style: italic;
 }
 
-.stories {
+.stories,
+.pictures .story {
   background: #FFBC00;
   font-size: 1.125rem;
   line-height: 1.375rem;
 }
 
-.stories h3 {
-  font-size: 2.5rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.1875rem;
+.stories h3,
+.pictures .story h3 {
+  font-size: 1.375rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.5rem;
 }
 
-.stories .explication {
+@media only screen and (min-width: 40.0625em) {
+  .stories h3,
+  .pictures .story h3 {
+    font-size: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.1875rem;
+  }
+}
+
+.stories .explication,
+.pictures .story .explication {
   font-style: italic;
   color: #333;
 }
 
-.stories .agir {
+.stories .agir,
+.pictures .story .agir {
   margin-top: 1.375rem;
   margin-bottom: 2.5rem;
   background: #D69D00;
@@ -4836,7 +4897,8 @@ strong {
   padding: 0 1.375rem;
 }
 
-.stories .agir h4 {
+.stories .agir h4,
+.pictures .story .agir h4 {
   margin: 1rem 0;
   color: #FFF;
   font-style: italic;
@@ -4844,14 +4906,21 @@ strong {
   background: url("../images/line.png") repeat-x 0% 50%;
 }
 
-.stories .agir h4 span {
+.stories .agir h4 span,
+.pictures .story .agir h4 span {
   background: #D69D00;
   padding: 0 1.25rem;
 }
 
-.stories .agir p {
+.stories .agir p,
+.pictures .story .agir p {
   margin: 0 0 1rem 0;
   padding: 0;
+}
+
+.stories .agir a,
+.pictures .story .agir a {
+  color: #000;
 }
 
 .story {
@@ -4865,6 +4934,44 @@ strong {
 
 .logobottom {
   margin-left: -80px;
+}
+
+.facebook {
+  position: relative;
+}
+
+.facebook .social-links {
+  position: absolute;
+  bottom: -35px;
+  right: 0px;
+}
+
+.facebook .social-links a {
+  display: block;
+  text-indent: -5000px;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: url("../images/logo-social.png") no-repeat 0 0;
+}
+
+.facebook .social-links a.tw {
+  background-position: -50px 0;
+}
+
+.facebook .social-links a.yt {
+  background-position: -100px 0;
+}
+
+.facebook .social-links a:hover {
+  background-position: 0 -50px;
+}
+
+.facebook .social-links a.tw:hover {
+  background-position: -50px -50px;
+}
+
+.facebook .social-links a.yt:hover {
+  background-position: -100px -50px;
 }
 
 .clearfix {

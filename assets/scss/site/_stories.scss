@@ -1,11 +1,17 @@
-.stories {
+.stories,
+.pictures .story {
     background: $yellow;
     font-size: rem-calc(18);
     line-height: rem-calc(22);
     h3 {
-        font-size: rem-calc(40);
-        padding-top: rem-calc(40);
-        padding-bottom: rem-calc(35);
+        font-size: rem-calc(22);
+        padding-top: rem-calc(20);
+        padding-bottom: rem-calc(24);
+        @media #{$medium-up} {
+            font-size: rem-calc(40);
+            padding-top: rem-calc(40);
+            padding-bottom: rem-calc(35);
+        }
     }
     .explication {
         font-style: italic;
@@ -31,6 +37,9 @@
         p {
             margin: 0 0 rem-calc(16) 0;
             padding: 0;
+        }
+        a {
+            color: #000;
         }
     }
 }
