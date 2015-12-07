@@ -37,6 +37,7 @@ $(document).ready(function(){
             $('.picture .cover').stop( true, true ).animate({opacity: 0});
         });
 
+    // --> Animation Panel
         var tl = new TimelineLite();
         tl.to($('.coverme'), 5, {opacity:1} )
         .from($('.line-one'), .5, {opacity:0, top: '-50'})
@@ -47,5 +48,12 @@ $(document).ready(function(){
         .from($('.line-five'), .5, {opacity:0, bottom: '-100'})
         .from($('.buttondonpanel'), .5, {scale:0})
         .from($('.myplus'), .5, {opacity:0, bottom: -100});
+
+    // --> Woopra Stuff
+        $('.wopra').on('click', function() {
+            var myAction = $(this).data().action;
+            var myWoopra = $(this).data().woopra;
+            woopra.track('interaction', { category: myWoopra, action: myAction, value:0,url: document.location.href, title: document.title});
+        });
 
 });
