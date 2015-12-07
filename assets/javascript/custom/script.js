@@ -37,4 +37,15 @@ $(document).ready(function(){
             $('.picture .cover').stop( true, true ).animate({opacity: 0});
         });
 
+        var tl = new TimelineLite();
+        tl.to($('.coverme'), 5, {opacity:1} )
+        .from($('.line-one'), .5, {opacity:0, top: '-50'})
+        .from($('.theten'), 1, {opacity: 0, scale: 0})
+        .from($('.line-two'), .5, {opacity:0, left: '-100'})
+        .from($('.line-three'), .5, {opacity:0, right: '-100'})
+        .from($('.line-four'), .5, {opacity:0, bottom: '-100'})
+        .from($('.line-five'), .5, {opacity:0, bottom: '-100'})
+        .from($('.buttondonpanel'), .5, {scale:0})
+        .from($('.myplus'), .5, {opacity:0, bottom: -100});
+
 });

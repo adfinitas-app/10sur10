@@ -4013,6 +4013,7 @@ strong {
 }
 
 .front-banner .coverme {
+  opacity: 0;
   padding-top: 5.9375rem;
   background: url("../images/bg-frontheader.png");
   display: block;
@@ -4025,6 +4026,10 @@ strong {
 
 .front-banner .coverme span {
   display: block;
+}
+
+.front-banner .coverme * {
+  position: relative;
 }
 
 .front-banner .line-one {

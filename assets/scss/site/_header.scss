@@ -4,6 +4,7 @@
     background-size: cover;
     position: relative;
     .coverme {
+        opacity: 0;
         padding-top: $topbar-height;
         background: url('../images/bg-frontheader.png');
         display: block;
@@ -15,6 +16,9 @@
         //scale-color($header-font-color, $lightness: 35%);
         span {
             display: block;
+        }
+        * {
+            position: relative;
         }
     }
     .line-one {
