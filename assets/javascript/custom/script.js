@@ -18,7 +18,7 @@ $(document).ready(function(){
         $('.picture').on('click', function() {
             var myData = $(this).data().story;
             $(this).find('.cover').addClass('hover');
-            $('.picture .cover').not('.cover.hover').stop( true, true ).animate({opacity: '.9'});
+            $('.picture .cover').not('.cover.hover').stop( true, true ).animate({opacity: '.7'});
 
             if (Foundation.utils.is_small_only())
             {
@@ -67,7 +67,7 @@ $(document).ready(function(){
 
     // --> Animation Panel
         var tl = new TimelineLite();
-        tl.to($('.coverme'), 5, {opacity:1} )
+        tl.to($('.coverme'), 2, {opacity:1} )
         .from($('.line-one'), .5, {opacity:0, top: '-50'})
         .from($('.theten'), 1, {opacity: 0, scale: 0})
         .from($('.line-two'), .5, {opacity:0, left: '-100'})

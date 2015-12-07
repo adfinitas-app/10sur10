@@ -1,9 +1,13 @@
 .pad-light {
-  background: $light;
+  background: #EFEFE0;//$light;
+  color: #4C4B4C;
 }
 .equal {
     padding: rem-calc(78) 0 rem-calc(48);
 }
 .mybutton {
     margin-bottom: 0;
+}
+.bttrame {
+    background: url('../images/trame-bt.png') top center;
 }

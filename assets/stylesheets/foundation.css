@@ -4705,6 +4705,7 @@ strong {
 
 .pad-light {
   background: #EFEFE0;
+  color: #4C4B4C;
 }
 
 .equal {
@@ -4713,6 +4714,10 @@ strong {
 
 .mybutton {
   margin-bottom: 0;
+}
+
+.bttrame {
+  background: url("../images/trame-bt.png") top center;
 }
 
 .pad-dark {
@@ -4725,7 +4730,7 @@ strong {
 }
 
 .give {
-  color: #22531D;
+  color: #529100;
   margin-top: 3.75rem;
 }
 
@@ -4930,6 +4935,7 @@ strong {
 .footer {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  color: #777777;
 }
 
 .logobottom {
