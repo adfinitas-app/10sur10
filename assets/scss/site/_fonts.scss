@@ -60,17 +60,28 @@ strong {
     font-family: 'VerbCompBold', 'Helvetica', Arial, sans-serif;
 }
 .size45 {
-    font-size: rem-calc(45);
+    font-size: rem-calc(35);
+    @media #{$medium-up} {
+        font-size: rem-calc(45);
+    }
 }
 .size25 {
-    line-height: rem-calc(30);
-    font-size: rem-calc(25);
+    line-height: rem-calc(20);
+    font-size: rem-calc(18);
+    @media #{$medium-up} {
+        line-height: rem-calc(30);
+        font-size: rem-calc(25);
+    }
 }
 .size30 {
     line-height: rem-calc(35);
     font-size: rem-calc(30);
 }
 .size35 {
-    line-height: rem-calc(35);
-    font-size: rem-calc(30);
+    line-height: rem-calc(24);
+    font-size: rem-calc(22);
+    @media #{$medium-up} {
+        line-height: rem-calc(35);
+        font-size: rem-calc(30);
+    }
 }

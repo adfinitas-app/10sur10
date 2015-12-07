@@ -73,23 +73,36 @@
         padding-right: rem-calc(35);
         text-align: left;
         p {
-            font-size: rem-calc(20);
-            line-height: rem-calc(24);
+            font-size: rem-calc(16);
+            line-height: rem-calc(20);
+            @media #{$medium-up} {
+                font-size: rem-calc(20);
+                line-height: rem-calc(24);
+            }
             &.solution {
-                font-size: rem-calc(26);
-                line-height: rem-calc(28);
+                font-size: rem-calc(18);
+                line-height: rem-calc(20);
+                @media #{$medium-up} {
+                    font-size: rem-calc(26);
+                    line-height: rem-calc(28);
+                }
             }
             &.source {
-                padding-top: rem-calc(100);
+                padding-top: rem-calc(0);
                 padding-bottom: rem-calc(0);
                 font-size: rem-calc(13);
+                @media #{$medium-up} {
+                    padding-top: rem-calc(100);
+                }
             }
         }
 
     }
     &.pad-vertical {
         .cover {
-            padding-top: rem-calc(155);
+            @media #{$medium-up} {
+                padding-top: rem-calc(155);
+            }
         }
         @media #{$medium-up} {
             height: rem-calc(550);

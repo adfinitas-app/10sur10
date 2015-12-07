@@ -4400,12 +4400,25 @@ strong {
 }
 
 .size45 {
-  font-size: 2.8125rem;
+  font-size: 2.1875rem;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .size45 {
+    font-size: 2.8125rem;
+  }
 }
 
 .size25 {
-  line-height: 1.875rem;
-  font-size: 1.5625rem;
+  line-height: 1.25rem;
+  font-size: 1.125rem;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .size25 {
+    line-height: 1.875rem;
+    font-size: 1.5625rem;
+  }
 }
 
 .size30 {
@@ -4414,8 +4427,15 @@ strong {
 }
 
 .size35 {
-  line-height: 2.1875rem;
-  font-size: 1.875rem;
+  line-height: 1.5rem;
+  font-size: 1.375rem;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .size35 {
+    line-height: 2.1875rem;
+    font-size: 1.875rem;
+  }
 }
 
 .top-bar {
@@ -4606,23 +4626,45 @@ strong {
 }
 
 .pad .cover p {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .pad .cover p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
 }
 
 .pad .cover p.solution {
-  font-size: 1.625rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .pad .cover p.solution {
+    font-size: 1.625rem;
+    line-height: 1.75rem;
+  }
 }
 
 .pad .cover p.source {
-  padding-top: 6.25rem;
+  padding-top: 0;
   padding-bottom: 0;
   font-size: 0.8125rem;
 }
 
-.pad.pad-vertical .cover {
-  padding-top: 9.6875rem;
+@media only screen and (min-width: 40.0625em) {
+  .pad .cover p.source {
+    padding-top: 6.25rem;
+  }
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .pad.pad-vertical .cover {
+    padding-top: 9.6875rem;
+  }
 }
 
 @media only screen and (min-width: 40.0625em) {
