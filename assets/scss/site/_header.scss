@@ -25,10 +25,16 @@
 
 .front-banner {
     height: rem-calc(800);
-    background: url('../images/front-banner.jpg') no-repeat 50% 50%;
+    background: url('../images/front-banner-small.jpg') no-repeat 50% 50%;
     background-size: cover;
     position: relative;
     overflow: hidden;
+    @media #{$medium-only} {
+        background: url('../images/front-banner-medium.jpg') no-repeat 50% 50%;
+    }
+    @media #{$large-up} {
+        background: url('../images/front-banner.jpg') no-repeat 50% 50%;
+    }
     .coverme {
         opacity: 0;
 
