@@ -4490,7 +4490,9 @@ strong {
 
 .front-banner {
   height: 50rem;
-  background: url("../images/front-banner-small.jpg") no-repeat 50% 50%;
+  background-image: url("../images/front-banner-small.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -4498,13 +4500,13 @@ strong {
 
 @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
   .front-banner {
-    background: url("../images/front-banner-medium.jpg") no-repeat 50% 50%;
+    background-image: url("../images/front-banner-medium.jpg");
   }
 }
 
 @media only screen and (min-width: 64.0625em) {
   .front-banner {
-    background: url("../images/front-banner.jpg") no-repeat 50% 50%;
+    background-image: url("../images/front-banner.jpg");
   }
 }
 
