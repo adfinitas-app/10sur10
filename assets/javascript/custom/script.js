@@ -17,6 +17,7 @@ $(document).ready(function(){
     // --> Panneaux PHOTOS
         $('.picture').on('click', function() {
             var myData = $(this).data().story;
+            //$('.cover.hover').removeClass('hover');
             $(this).find('.cover').addClass('hover');
             $('.picture .cover').not('.cover.hover').stop( true, true ).animate({opacity: '.7'});
             var myTop = $('.pictures').offset().top + 350;
@@ -67,7 +68,7 @@ $(document).ready(function(){
 
     // --> Animation Panel
         var tl = new TimelineLite();
-        tl.to($('.coverme'), 1, {opacity:1} )
+        tl.to($('.coverme'), 5, {opacity:1} )
         .from($('.line-one'), .5, {opacity:0, top: '-50'})
         .from($('.theten'), 1, {opacity: 0, scale: 0})
         .from($('.line-two'), .5, {opacity:0, left: '-100'})
@@ -75,7 +76,8 @@ $(document).ready(function(){
         .from($('.line-four'), .5, {opacity:0, bottom: '-100'})
         .from($('.line-five'), .5, {opacity:0, bottom: '-100'})
         .from($('.buttondonpanel'), .5, {scale:0})
-        .from($('.myplus'), .5, {opacity:0, bottom: -100});
+        .from($('.myplus'), .5, {opacity:0, bottom: -100})
+        .from($('.creditscover'), .5, {opacity:0, bottom: -100});
 
     // --> Woopra Stuff
         $('.wopra').on('click', function() {
