@@ -4627,6 +4627,7 @@ strong {
 
 .pads h2 strong {
   font-size: 2.5rem;
+  text-decoration: underline;
 }
 
 .pad {
@@ -4856,6 +4857,10 @@ strong {
     margin-right: auto;
     float: none;
   }
+}
+
+.pictures .picture .name {
+  text-decoration: underline;
 }
 
 .pictures .picture .story-mini {
