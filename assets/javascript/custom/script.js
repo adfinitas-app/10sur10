@@ -1,6 +1,13 @@
 jQuery(document).foundation();
 
 $(document).ready(function(){
+    // --> Stack Hash !
+        var myHash = window.location.hash;
+        if ( (myHash != "") && ($(myHash).offset().top != undefined) )
+        {
+            var myOffset = (Foundation.utils.is_small_only()) ? 190 : 95 ;
+            $('body,html').animate({scrollTop: $(myHash).offset().top - myOffset});
+        }
     // --> Panels Verts
         $('.pad a').on('click', function(e) {
             e.preventDefault();
