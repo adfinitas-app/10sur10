@@ -447,7 +447,7 @@ Profitez-en sur vos impôts 2015, faites votre don avant le 31 décembre 2015
     <script>
         $("a[data-woopra*='CTA']").click(function() {
             woopra.track('interaction', { category: $(this).attr('data-woopra'), action: "clic", value:0,url: document.location.href, title: document.title});
-            console.log("tracked");
+            console.log($(this).attr('data-woopra'));
         });
     </script>
 </body>
